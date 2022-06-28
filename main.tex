@@ -1,0 +1,97 @@
+% ===
+%
+% Official LaTeX beamer template of the
+% Chair for AI Methodology (AIM)
+% RWTH Aachen University, Aachen, Germany
+%
+% Author: Jakob Bossek (bossek@aim.rwth-aachen.de)
+% 
+% AIM website: https://aim.rwth-aachen.de/
+%
+% ===
+
+% AVAILABLE OPTIONS:
+% ===
+% thesis: either 'master' or 'bachelor' (all lowercase without quotation marks
+\documentclass[thesis=bachelor]{AIM_thesis}
+
+% includes/preamble.tex is the right place to add new packages etc.
+\input{includes/preamble}
+
+% import commenting macros
+\input{includes/macros/commenting}
+
+% thesis title (pay attention to correct line-breaks)
+\title{Advancing the State of the Art of Automated Artificial\\Intelligence~(AutoAI) by Evolutionary Computation:\\
+A Preliminary Study in the Context of Hyper-Parameter Optimisation}
+\author{Jane Doe}
+
+% add supervisors
+\supervisors{
+Dr.~Jakob Bossek\\
+Prof. Dr. Holger H. Hoos\\
+}
+% your student identifier (ID)
+\id{123456}
+% your e-mail address 
+\email{jane.doe\@rwth-aachen.de}
+
+% your address (not used at the moment)
+% \street{Theaterstraße 35-39}
+% \zip{52064}
+% \city{Aachen}
+% \country{Germany}
+
+% source file(s) with bibliography entries
+\addbibresource{bib.bib}
+
+\begin{document}
+
+% NOTE: DO NOT EDIT THE FOLLOWING LINES!
+
+% title-page
+\maketitle
+
+\cleardoublepage
+\pagenumbering{roman}
+
+% abstract
+\abstract{\blindtext}
+
+% table of contents
+\cleardoublepage
+\pagestyle{empty}
+\tableofcontents
+
+% lists (comment out if not applicable)
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+\addcontentsline{toc}{chapter}{List of Algorithms}
+\listofalgorithms
+
+% change page numbering style
+\cleardoublepage
+\pagenumbering{arabic}
+\pagestyle{fancyplain}
+
+% NOTE: ADD YOUR CONTENT HERE
+\input{chapters/01-introduction}
+\input{chapters/02-guidelines}
+\input{chapters/03-conclusion}
+
+\printbibliography[heading=bibintoc, title=References]
+
+\newpage
+\pagestyle{empty}
+
+\appendix
+
+\chapter{Additional material}
+
+\blindtext[5]
+
+\includepdf[pages=-,pagecommand={},width=\textwidth]{files/oathstatement.pdf}
+
+\end{document}

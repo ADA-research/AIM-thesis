@@ -1,0 +1,51 @@
+\chapter{Guidelines}
+\label{chap:guidelines}
+
+We use the \LaTeX{} package \texttt{biblatex} for citations. Sample citation:~\cite{HutterEtAl2009}. You can also use full citations: \fullcite{HBPSTK2021TSPnormalization}
+
+You are free to use British, American, Canadian or Australian English, but whatever you choose should be used consistently.
+As Europeans, we recommend the use of British English (which is also well supported by spell and grammar checkers).
+
+\section{Figures and tables}
+
+Figure~\ref{fig:sample_image} shows a sample image, Table~\ref{fig:sample_table} shows an exemplary table and Algorithm~\ref{alg:sample_algorithm} shows some pseudo-code. Use the \texttt{booktabs} package to design nice tables. Avoid vertical lines whenever possible. We recommend to take a look at the presentation \href{https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf}{Small Guide to Making Nice Tables} by Markus P\"uschel.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.3\textwidth]{example-image-a}
+    \caption{Sample image.}
+    \label{fig:sample_image}
+\end{figure}
+
+\begin{table}
+  \centering
+    \renewcommand{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.1}
+    \input{tables/sample_table}
+    \caption{Sample table taken from~\cite{BossekKN00T19TSPcreative}.}
+    \label{fig:sample_table}
+\end{table}
+
+\begin{algorithm}
+\caption{Sample algorithm with the \texttt{algorithm2e} package.}
+\label{alg:sample_algorithm}
+\KwData{fitness function $f$, number of bits $n$, population size $\mu$}
+\KwResult{Final population.}
+Initialise a population $P$ of $\mu$ solutions each uniformly at random\;
+\While{termination condition not met}{
+  Select a parent $x \in P$ uniformly at random\;
+  Generate $y$ from $x$ by bit-wise independent mutation flipping each bit with probability $\frac{1}{n}$\;
+  Set $P = P \cup \{y\}$\;
+  Let $x' = \text{argmin}_{x \in P} f(x)$\;
+  Set $P = P \setminus \{x'\}$\;
+} % While
+\end{algorithm}
+
+\section{Additional macros}
+
+It is often useful to comment on different things while writing a report, adding ToDos or highlight changed or added parts. To this end the file \texttt{includes/commenting.tex} defines some useful macros.
+\begin{itemize}
+    \item Use \verb|\todo{...}| to add a ToDo:\newline \todo{Do this, do that}
+    \item Use \verb|\changed{...}| to indicate changes:\newline \changed{This text was changed.}
+    \item Use \verb|\added{...}| to highlight additions:\newline \added{This text was added.}
+\end{itemize}
