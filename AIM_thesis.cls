@@ -1,6 +1,6 @@
 % ===
 %
-% Official LaTeX beamer class file of the 
+% Official LaTeX thesis class file of the
 % Chair for AI Methodology (AIM)
 % RWTH Aachen University, Aachen, Germany
 %
