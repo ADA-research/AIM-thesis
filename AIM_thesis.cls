@@ -16,14 +16,14 @@
 % ====================
 
 %
-\def\fileversion{1.0.0}
-\def\filedata{2022/06/21}
+\def\fileversion{1.1.0}
+\def\filedata{2023/03/23}
 
 % set LaTeX version to work with
 \NeedsTeXFormat{LaTeX2e}
 
 % declare class
-\ProvidesClass{AIM_thesis}[2022/04/12 RWTH Aachen, Chair for AI Methodology thesis template]
+\ProvidesClass{AIM_thesis}[2023/03/23 RWTH Aachen, Chair for AI Methodology thesis template]
 
 
 % ==============================
@@ -80,6 +80,7 @@
 % font
 \RequirePackage{palatino}
 \RequirePackage{setspace}
+\RequirePackage{mathpazo} % math in Palatino font
 
 % math
 \RequirePackage{amsmath}

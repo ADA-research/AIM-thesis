@@ -1,3 +1,4 @@
+%!TEX root=../main.tex
 \chapter{Guidelines}
 \label{chap:guidelines}
 
@@ -41,6 +42,16 @@ Initialise a population $P$ of $\mu$ solutions each uniformly at random\;
 } % While
 \end{algorithm}
 
+\section{Mathematics}
+Math looks so awesome in \LaTeX{}!
+
+\begin{align*}
+  \hat{\theta}_{\text{ML}} = T(X_1, \ldots, X_n) = \frac{n}{n-1} \sum_{\frac{i=1}{i \neq k}}^{m} \left(X_i^2 - \exp(X_i - X_k)\right)^{k/2}
+\end{align*}
+
+For every tree with $n$ nodes and maximum degree $\Delta$ the expected time until RLS and (1+1) EA find an optimal $\Delta$-edge-coloring is $O(\Delta \ell^2 m \log m)$ where $\ell$ is the length of the longest path in the tree.
+
+
 \section{Additional macros}
 
 It is often useful to comment on different things while writing a report, adding ToDos or highlight changed or added parts. To this end the file \texttt{includes/commenting.tex} defines some useful macros.
@@ -48,4 +59,10 @@ It is often useful to comment on different things while writing a report, adding
     \item Use \verb|\todo{...}| to add a ToDo:\newline \todo{Do this, do that}
     \item Use \verb|\changed{...}| to indicate changes:\newline \changed{This text was changed.}
     \item Use \verb|\added{...}| to highlight additions:\newline \added{This text was added.}
+\end{itemize}
+
+\section{Frequently Asked Questions}
+
+\begin{itemize}
+  \item \textbf{Q:} Why are my citations not found?\newline{}\textbf{A:} AIM-thesis uses the \texttt{biblatex} package with the \emph{biber} backend. This might cause the problems. In \texttt{includes/preamble.tex} delete the \texttt{backend=biber} option. This should fix the problem.
 \end{itemize}
