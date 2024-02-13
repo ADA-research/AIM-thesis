@@ -162,8 +162,8 @@
 \parindent0pt
 \onehalfspacing
 \begin{titlepage}
-    \includegraphics[width=4cm]{figures/rwth-logo.png}\par
-    \vspace*{3cm}
+    %\includegraphics[width=4cm]{figures/rwth-logo.png}\par
+    \vspace*{4.5cm}
     {\large \@thesistype}\par
     \vspace*{0.5cm}
     {\large \textbf \@title}\par
