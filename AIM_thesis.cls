@@ -16,14 +16,14 @@
 % ====================
 
 %
-\def\fileversion{1.1.0}
-\def\filedata{2023/03/23}
+\def\fileversion{1.1.1}
+\def\filedata{2025/09/12}
 
 % set LaTeX version to work with
 \NeedsTeXFormat{LaTeX2e}
 
 % declare class
-\ProvidesClass{AIM_thesis}[2023/03/23 RWTH Aachen, Chair for AI Methodology thesis template]
+\ProvidesClass{AIM_thesis}[2025/09/12 RWTH Aachen, Chair of AI Methodology thesis template]
 
 
 % ==============================
@@ -176,8 +176,8 @@
     \vspace*{1cm}
     RWTH Aachen University\\
     Department of Computer Science\\
-    Chair for AI Methodology~(Informatik~14)\\
-    \url{https://aim.rwth-aachen.de/}
+    Chair of AI Methodology~(Informatik~14)\\
+    \url{https://www.aim.rwth-aachen.de/}
 \end{titlepage}
 \restoregeometry{}
 } % maketitle
