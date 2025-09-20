@@ -160,6 +160,7 @@
 \renewcommand{\maketitle}{
 \newgeometry{left=2cm, top=3cm, bottom=3cm, right=8cm}
 \parindent0pt
+\parskip1.5ex
 \onehalfspacing
 \begin{titlepage}
     %\includegraphics[width=4cm]{figures/rwth-logo.png}\par
