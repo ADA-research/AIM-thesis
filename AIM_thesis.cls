@@ -176,7 +176,7 @@
     {\@supervisors}\par
     \vspace*{1cm}
     RWTH Aachen University\\
-    Department of Computer Science\\
+    Faculty of Computer Science\\
     Chair of AI Methodology~(Informatik~14)\\
     \url{https://www.aim.rwth-aachen.de/}
 \end{titlepage}
